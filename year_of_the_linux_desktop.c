@@ -7,4 +7,5 @@ int main(void)
 	struct tm *time = localtime(&current_time);
 	int year_of_linux_desktop = time->tm_yday < 182 ? time->tm_year + 1900 : time->tm_year + 1901;
 	printf("The year of the Linux desktop will be %d.\n", year_of_linux_desktop);
+	return 0;
 }
